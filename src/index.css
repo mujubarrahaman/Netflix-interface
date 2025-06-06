@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* Login Success style */
+
+* {
+  list-style: none;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.containersec {
+  width: 94%;
+  margin: auto;
+}
+
+body {
+  background: #232323;
+}
+
+.one {
+  background: black;
+}
+
+.one .section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.one .section1 .logo img {
+  width: 120px;
+  filter: contrast(100);
+}
+
+.one .section1 .buttons {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.one .section1 .buttons button {
+  padding: 5px 15px;
+  margin: 0 6px;
+  cursor: pointer;
+  outline-style: none;
+  border-style: none;
+  font-size: 15px;
+  background: rgb(235, 16, 16);
+  color: white;
+  font-weight: 500;
+  border-radius: 3px;
+
+}
+
+.one .section1 .buttons p {
+  text-transform: uppercase;
+}
+
+.one .section1 .buttons button:hover {
+  background: red;
+}
+
+.one .section1 .buttons button:nth-child(3) {
+  background: none;
+  outline: 1px solid white;
+}
+
+
+/* Let's Make Header Position sticky  */
+.one {
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  z-index: 100;
+}
+
+/* Section Two */
+
+.two .imgbox {
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(20, 20, 20, .8)38%, rgba(255, 0, 0, 0)60%), url(./assetsContent/background.jpg);
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  box-shadow: inset 360px 0px 100px -90px #141414;
+}
+
+.section2 img {
+  margin-top: 90px;
+}
+
+.two .imgbox .section2 .head img {
+  width: 350px;
+  margin-bottom: 40px;
+  filter: contrast(100);
+}
+
+.two .imgbox .section2 h1 {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+.two .imgbox .section2 p {
+  margin-bottom: 20px;
+  color: white;
+  width: 480px;
+}
+
+.two .imgbox .section2 .light {
+  color: #bbb;
+
+}
+
+/* <<<<<<<<<<<<<<<<<<<< Seaction Three >>>>>>>>>>>> */
+
+.section3 {
+  box-shadow: 0 5px 15px #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(20deg, #333, #141414);
+  padding: 10px 30px;
+  margin-bottom: 30px;
+}
+
+.section3 .right {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.section3 .right img {
+  width: 50px;
+  filter: contrast(3);
+}
+
+.section3 button {
+  background: rgb(211, 14, 14);
+  color: white;
+  font-size: 16px;
+  outline-style: none;
+  border-style: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* <<<<<<<<<<<<<<<<<<Section Four >>>>>>>>>>>>> */
+
+.four .section4 {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  color: white;
+  font-weight: 500;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* <<<<<<<<<<<<<<Section Five >>>>>>>>>>>>>> */
+
+.five .section5 .head p {
+  font-size: 28px;
+  margin: 30px 0;
+  color: white;
+}
+
+.five .section5 .head p span {
+  color: #bbb;
+  font-size: 23px;
+}
+
+
+.swiper .swiper-slide {
+  min-width: 300px;
+  width: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper .swiper-slide h3 {
+  padding: 10px 0;
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.five .section5 .swiper {
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+/* <<<<<<<<<<<<<<<section Six>>>>>>>>>>>>>> */
+
+
+.six .section6 {
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.six .section6 .head {
+  font-size: 28px;
+  color: white;
+  margin: 22px 0;
+}
+
+.six .section6 .head .span {
+  font-size: 24px;
+  color: #bbb;
+}
+
+.six .section6 .season {
+  display: flex;
+  align-items: center;
+  font-size: 21px;
+  margin: 20px 0;
+  color: white;
+}
+
+.six .section6 .about {
+  width: 470px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.six .section6 .episode {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-top: 30px;
+}
+
+.six .section6 .episode .ones {
+  min-width: 30px;
+  width: 100%;
+  cursor: pointer;
+
+
+}
+
+
+.six .section6 .episode .ones img {
+  width: 100%;
+}
+
+.six .section6 .episode .ones .details .time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin: 10px 0;
+
+}
+
+.six .section6 .episode .ones .details .about {
+  color: #bbb;
+  width: fit-content;
+  font-size: 14px;
+}
+
+/* <<<<<<<<<<<<<<<< Section Seven>>>>>>>>>>>>>>>> */
+
+.seven .section7 .moredetails {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+
+
+.seven .section7 .moredetails .watch h3 {
+  color: #bbb;
+  margin: 10px 0;
+}
+
+.seven .section7 .moredetails .watch {
+  width: 400px;
+  font-weight: 500;
+  color: white;
+}
+
+.seven .section7 .head h1 {
+  color: white;
+  margin-bottom: 25px;
+}
+
+.seven .section7 .casthead {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: white;
+
+}
+
+.seven .section7 .moredetails .cast1 {
+  font-weight: 500;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.seven .section7 .moredetails .cast1 ul li {
+  padding: 5px;
+  color: #bbb;
+}
+
+/* <<<<<<<<<<<<<<<<<<< Section Eight >>>>>>>>>>> */
+
+.eight .section8 .eight-head {
+  color: white;
+  margin: 30px 0;
+}
+
+.eight .section8 .morelike {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 30px;
+}
+
+.eight .section8 .morelike .more1 {
+  min-width: 30px;
+  width: 100%;
+}
+
+.eight .section8 .morelike .more1 img {
+  width: 100%;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:768px) {
+  .six .section6 .episode {
+    font-size: small;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .six .section6 .episode .ones .details .about p {
+    font-size: small;
+  }
+
+  .seven .section7 .moredetails {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    font-size: small;
+  }
+
+  .seven .section7 .moredetails .watch {
+    width: 230px;
+  }
+
+  .eight .section8 .morelike {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .one .section1 .logo img {
+    width: 90px;
+    filter: contrast(100);
+  }
+
+  .one .section1 .buttons {
+    gap: 15px;
+  }
+
+  .one .section1 .buttons p {
+
+    font-size: 12px;
+
+  }
+
+  .one .section1 .buttons button {
+    font-size: 12px;
+  }
+
+  .one .section1 .buttons .signin {
+    display: none;
+  }
+}
+
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<  Login Fail Page >>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+.fail_container .fail_box {
+
+  background: rgba(0, 0, 0, 0.75);
+ 
+  width: 430px;
+  color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  border-radius: 10px;
+  text-align: center;
+  padding: 50px;
+}
+.fail_container .fail_box h1{
+ color:#e50914;
+ filter: contrast(100);
+  font-weight: 900;
+}
+.fail_container .fail_box p{
+  font-size: 18px;
+  margin: 25px 0 25px;
+  font-weight: 500;
+}
+.fail_container .fail_box button{
+  background: #e50914;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+}
+.fail_container .fail_box button:hover{
+  background: #c40812;
+}
+
+/* Responsive */
+
+@media screen and (max-width:768px){
+
+  .fail_container .fail_box {
+    width: 350px;
+  
+  }
+  .fail_container .fail_box h1{
+    font-weight: 700;
+  }
+  .fail_container .fail_box p{
+    font-size: 12px;
+    margin: 15px 0 10px;
+  }
+  .fail_container .fail_box button{
+    font-size: 12px;
+  }
+  
+
+}

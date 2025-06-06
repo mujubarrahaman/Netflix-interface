@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+  }
+  .container{
+    background: #000;
+  }
+  .container::before{
+    content: "";
+    position: absolute;
+    background: url("../assets/hero-img.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-position: center;
+  }
+  nav{
+    position: fixed;
+    z-index: 1;
+    padding: 25px 60px;
+  }
+  nav a img{
+    width: 160px;
+  }
+  
+  .form-Wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: rgba(0,0,0,0.75);
+    transform: translate(-50%,-50%);
+    padding: 60px;
+    border-radius: 4px;
+    width: 430px;
+  }
+  .form-Wrapper h2{
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  .form-Wrapper .form{
+    margin: 25px 0 65px;
+  }
+  .form .form-control{
+    height: 50px;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .form-control input{
+    height: 100%;
+    width: 100%;
+    background: #333;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 0 20px;
+  }
+
+  .form-control input:is(:focus, :valid) {
+    padding: 15px 20px 0;
+    background: #5f5d5d;
+  }
+  
+
+
+.form-control label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    color: #8c8c8c;
+    pointer-events: none;
+    font-size: 1rem;
+    transform: translateY(-50%);
+    transition: all 0.1s ease;
+}
+
+.form-control input:is(:focus, :valid) ~ label{
+    font-size: 0.75rem;
+    transform: translateY(-130%);
+}
+.form button{
+    width: 100%;
+    padding: 16px 0;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 4px;
+    background: #e50914;
+    margin: 25px 0 10px;
+    transition: 0.1s ease;
+}
+
+.form button:hover{
+    background: #c40812;
+}
+.form .form_help{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form .form_help :where(label, a){
+    font-size: 0.9rem;
+}
+
+.form .remember_me{
+    display: flex;
+}
+
+.form .remember_me input{
+    margin: 5px;
+    accent-color: #b3b3b3;
+}
+.form-Wrapper :where(label, p,small,a){
+    color: #b3b3b3;
+}
+.form-Wrapper p a {
+    color: #fff;
+}
+.form-Wrapper small{
+    display: block;
+    margin-top: 15px;
+}
+.form-Wrapper small a{
+    color: #0071eb;
+
+}
+
+.form-Wrapper a{
+    text-decoration: none;
+}
+.form-Wrapper a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width:740px){
+    .container::before{
+        background: black;
+        opacity: 0.9;
+        
+    }
+    nav , .form-Wrapper{
+        padding: 20px;
+    }
+    nav a img{
+        width: 140px;
+    }
+    .form-Wrapper{
+        top: 43%;
+        width: 100%;
+        
+    }
+    .form-Wrapper .form{
+        margin: 25px 0 40px;
+    }
+}
+
+
+
+
+
