@@ -28,7 +28,7 @@ const Login = () => {
           }
       
       
-        var loginDetails = axios.get(`netflix-backend.up.railway.app/login?username=${user}&password=${pass}`)
+        var loginDetails = axios.get(`http://netflix-backend.up.railway.app/login?username=${user}&password=${pass}`)
         loginDetails.then(function(data){
             if(data.data===true)
             {
