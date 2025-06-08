@@ -85,7 +85,7 @@ body {
 
 .two .imgbox {
   height: 100vh;
-  background: linear-gradient(90deg, rgba(20, 20, 20, .8)38%, rgba(255, 0, 0, 0)60%), url(./assetsContent/background.jpg);
+  background: linear-gradient(90deg, rgba(20, 20, 20, .8)38%, rgba(255, 0, 0, 0)60%), url(./assetsContent/dark-netflix.webp);
   background-position: center;
   background-size: cover;
   align-items: center;
